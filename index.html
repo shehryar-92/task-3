@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Random Sudoku</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Sudoku</h1>
+      <button id="theme-toggle" class="theme-toggle">🌙 Dark mode</button>
+    </header>
+
+    <div class="controls">
+      <select id="difficulty">
+        <option value="random" selected>Random (surprise me)</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="expert">Expert</option>
+      </select>
+      <button id="new-game" class="primary">New Puzzle</button>
+      <button id="check">Check</button>
+      <button id="solve">Solve</button>
+    </div>
+
+    <div class="status-bar">
+      <span id="message"></span>
+      <span id="timer">00:00</span>
+    </div>
+
+    <div id="board" class="board"></div>
+
+    <footer>Each puzzle is freshly generated with a unique solution — never the same layout twice.</footer>
+  </div>
+
+  <script src="sudoku-logic.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
 
